@@ -1,111 +1,89 @@
 # 🌐 Google Search Scraper (Playwright + BeautifulSoup)
-
-This project is a reusable Python template for scraping structured content from websites using [Playwright](https://playwright.dev/) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/). It extracts clean, structured data (sections and text) from public websites and saves the result into a JSON file.
+A **reusable Python template** for scraping structured content from websites using Playwright and BeautifulSoup. It extracts **clean, structured data** (sections and text) from public websites and saves the result into a JSON file.
 
 ---
 
-## 📦 Features
-
-- Headless browser scraping via **Playwright**
-- HTML parsing via **BeautifulSoup**
-- Smart filtering for meaningful content (headings, paragraphs, etc.)
-- Structured section-wise JSON output
-- Easy to modify and reuse on different sites
+## 📌 Features
+- 🚀 Headless browser automation via Playwright  
+- 🧾 HTML parsing using BeautifulSoup  
+- 🎯 Smart filtering for meaningful content (headings, paragraphs, etc.)  
+- 📂 Structured JSON output — section-wise content  
+- 🔄 Easily customizable for different target websites  
 
 ---
 
 ## 🖼 Example Use Case
+This scraper was used to extract structured content from **https://medium.com/**.  
 
-This scraper was used to extract structured content from **[https://medium.com]**. The output (see `structured_output.json`) includes sections such as:
-
-- Company Overview
-- AI-Powered Services
-- Job Roles (Niva)
-- FAQs and Integrations
-- Contact and Careers
+Sample output in `structured_output.json` includes:
+- Company Overview  
+- AI-Powered Services  
+- Job Roles (Niva)  
+- FAQs and Integrations  
+- Contact and Careers  
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Installation & Setup
 
-### 1. Clone the repository
+### 1️⃣ Clone the repository
+git clone https://github.com/NA7RAWY/Google_Search_Scraper.git
+cd Google_Search_Scraper
 
-```bash
-git clone https://github.com/your-username/google-search-scraper.git
-cd google-search-scraper
-```
-
-### 2. Install dependencies
-
-```bash
+### 2️⃣ Install dependencies
 pip install -r requirements.txt
 playwright install
-```
 
-> Note: `playwright install` is required once to download browser binaries.
+> `playwright install` is required once to download browser binaries.
 
 ---
 
 ## 🚀 How to Use
 
-### 1. Change the target URL
-
-Edit the `url` in `scraper.py`:
-
-```python
-url = "https://medium.com"  # or any other page you want
-```
+### 1. Set your target URL
+Edit the `url` variable in **scraper.py**:
+url = "https://medium.com"  # Change this to your target page
 
 ### 2. Run the scraper
-
-```bash
 python scraper.py
-```
 
-### 3. Output
-
-- A structured JSON will be saved as `structured_output.json`
-- Terminal will display organized sections with clean text
+### 3. View the results
+- **structured_output.json** will contain extracted content in JSON format  
+- Terminal will display clean, organized sections  
 
 ---
 
-## 📁 File Structure
-
-```
+## 📁 Project Structure
 .
 ├── scraper.py                # Main scraping logic
 ├── requirements.txt          # Required Python packages
-├── structured_output.json    # Output (auto-generated)
-└── README.md                 # This file
-```
+├── structured_output.json    # Output file (auto-generated)
+└── README.md                 # Project documentation
 
 ---
 
-## 🧠 Technologies Used
-
-- [Python 3.9+](https://www.python.org/)
-- [Playwright](https://playwright.dev/python/)
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
-- [lxml](https://lxml.de/)
-
----
-
-## 🛡 License
-
-This project is released under the [MIT License](https://opensource.org/licenses/MIT). Feel free to reuse and modify.
+## 🛠 Tech Stack
+- 🐍 Python 3.9+  
+- 🌐 Playwright  
+- 🥣 BeautifulSoup  
+- 📄 lxml  
 
 ---
 
-## 🧪 TODO / Improvements
-
-- Add command-line arguments (e.g., `--url`)
-- Handle pagination or infinite scroll
-- Export to Markdown or HTML
-- Optional: Support for login-protected pages
+## 🔮 Roadmap
+- [ ] Add CLI arguments (e.g., `--url`)  
+- [ ] Handle pagination / infinite scroll  
+- [ ] Export output to Markdown or HTML  
+- [ ] Optional: Support login-protected pages  
 
 ---
 
 ## 👤 Author
 **Mahmoud Elnahrawy**  
-Contact: mahmoudelnahrawywork@gmail.com 
-Cairo, Egypt
+📧 mahmoudelnahrawywork@gmail.com  
+📍 Cairo, Egypt  
+
+---
+
+## 🪪 License
+Released under the MIT License — free to use and modify.
