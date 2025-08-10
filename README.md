@@ -107,5 +107,5 @@ This project is released under the [MIT License](https://opensource.org/licenses
 
 ## 👤 Author
 **Mahmoud Elnahrawy**  
-Contact: info@nanovate.io  
+Contact: mahmoudelnahrawywork@gmail.com 
 Cairo, Egypt
